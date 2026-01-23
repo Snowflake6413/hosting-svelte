@@ -1,6 +1,7 @@
 <script>
     let provider = 'host.yaoi.tech';
     import Icon from "@iconify/svelte";
+    import '@fontsource/inter';
 </script>
 
 <footer>
