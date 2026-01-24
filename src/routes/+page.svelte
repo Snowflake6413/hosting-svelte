@@ -19,23 +19,44 @@
 
 <div class="plans">
     <h1>Our plans!</h1>
+
     <div class="plans-card">
-    <h3>Free Server 1</h3>
+        
+    <h3><Icon icon="material-symbols:eco" width="24" height="24" />Free</h3>
     <p><Icon icon="tabler:cpu" width="24" height="24" />1 vCPU</p>
-    <p><Icon icon="ri:ram-line" width="24" height="24" />1028 MiB of RAM</p>
+    <p><Icon icon="ri:ram-line" width="24" height="24" />2365 MiB of RAM</p>
     <p><Icon icon="mdi:storage" width="24" height="24" />5000 MiB of Storage</p>
+    <p>$0/mo</p>
+    <button>Get Plan</button>
+        </div>
+
+    <div class="plans-card">
+    <h3>Standard</h3>
+    <p><Icon icon="tabler:cpu" width="24" height="24" />2 vCPU</p>
+    <p><Icon icon="ri:ram-line" width="24" height="24" />4 GB of RAM</p>
+    <p><Icon icon="mdi:storage" width="24" height="24" />50 GB of Storage</p>
+    <p>$5/mo!</p>
+    <button>Get Plan</button>
     </div>
+
+    <div class="plans-card">
+    <h3>Pro</h3>
+    <p><Icon icon="tabler:cpu" width="24" height="24" />4 vCPU</p>
+    <p><Icon icon="ri:ram-line" width="24" height="24" />8 GB of RAM</p>
+    <p><Icon icon="mdi:storage" width="24" height="24" />250 GB of Storage</p>
+    <p>$15/mo</p>
+    <button>Get Plan</button>
+    </div>
+
 </div>
-
-
 <div class="about">
     <h1>About host.yaoi.tech</h1>
     <p>Founded in 2026, we provide afforable and reliable hosting services worldwide!</p>
     <p>We use high quality Linux-based servers! For all!</p>
 </div>
 
-<div class="features">
     <h1>Why choose {provider}?</h1>
+<div class="features">
     <div class="feature-card">
         <Icon icon="mdi:shield-check-outline" width="24" height="24" />
         <h3>99.9% Uptime</h3>
@@ -57,6 +78,14 @@
     footer {
         background: #333;
     }
+
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
 
     .plans-card {
         border: 1px solid #ccc;
@@ -87,10 +116,22 @@
         background: linear-gradient(13deg, #FA7921, #FE9920, #ECF8F8);
         color: white;
         min-height: 100vh;
+        text-align: center;
     }
 
     h1, h2, h3{
         font-weight: 700;
         letter-spacing: -0.5px;
+    }
+
+    .plans-card button {
+        background: #FE9920;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 12px;
+        cursor: pointer;
+        margin-top: 15px;
+        text-align: center;
     }
 </style>
